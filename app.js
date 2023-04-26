@@ -25,12 +25,7 @@ for (let i = 0; i < 20; i++) {
   const lastName = randChoice(lastNames);
   const age = Math.floor(Math.random() * (78 - 18 + 1) + 18);
 
-  obj.gender = gender;
-  obj.firstName = firstName;
-  obj.lastName = lastName;
-  obj.age = age;
-
-  people.push(obj);
+  people.push({ gender, firstName, lastName, age });
 }
 console.log(people);
 const data = JSON.stringify(people);
