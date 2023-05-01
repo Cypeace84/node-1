@@ -18,7 +18,6 @@ const randChoice = (arr) => {
 const people = [];
 
 for (let i = 0; i < 20; i++) {
-  const obj = {};
   const gender = randChoice(genders);
   const firstName =
     gender === 'm' ? randChoice(maleNames) : randChoice(femaleNames);
